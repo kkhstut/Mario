@@ -2,17 +2,11 @@ package jade;
 
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
-import org.lwjgl.system.MemoryStack;
-import util.Time;
-
-import java.nio.IntBuffer;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.system.MemoryStack.stackPush;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public class Window {
@@ -32,10 +26,10 @@ public class Window {
         this.width = 1920;
         this.height = 1080;
         this.title = "Mario";
-        r = 1;
-        g = 1;
-        b = 1;
-        a = 1;
+        r = 0;
+        g = 0;
+        b = 0;
+        a = 0;
     }
 
     public static void changeScene(int newScene) {
@@ -127,7 +121,7 @@ public class Window {
     }
 
     private void loop() {
-        float beginTime = Time.getTime();
+        float beginTime = (float)glfwGetTime();
         float endTime;
         float dt = -1.0f;
 
@@ -148,7 +142,7 @@ public class Window {
 
             glfwSwapBuffers(glfwWindow); // swap the color buffers
 
-            endTime = Time.getTime();
+            endTime =(float)glfwGetTime();
             dt = endTime - beginTime;
             beginTime = endTime;
         }
