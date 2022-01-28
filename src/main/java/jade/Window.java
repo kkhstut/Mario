@@ -29,7 +29,7 @@ public class Window {
         r = 0;
         g = 0;
         b = 0;
-        a = 0;
+        a = 1;
     }
 
     public static void changeScene(int newScene) {
@@ -142,7 +142,7 @@ public class Window {
 
             glfwSwapBuffers(glfwWindow); // swap the color buffers
 
-            endTime =(float)glfwGetTime();
+            endTime = (float)glfwGetTime();
             dt = endTime - beginTime;
             beginTime = endTime;
         }
