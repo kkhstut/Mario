@@ -3,34 +3,34 @@
   <ID>JAVA</ID>
   <OriginalElement>D:/sandbox/Mario</OriginalElement>
   <nodes>
-    <node x="1248.826086956522" y="615.6342570473005">jade.GameObject</node>
-    <node x="789.288043478261" y="651.2864309603441">jade.LevelEditorScene</node>
+    <node x="412.82608695652175" y="513.895126612518">jade.GameObject</node>
+    <node x="915.3750000000001" y="284.7032967032967">jade.LevelEditorScene</node>
     <node x="-589.2608695652175" y="1128.9565217391305">settings</node>
-    <node x="44.0" y="402.75382226469185">components.Sprite</node>
-    <node x="1838.5652173913052" y="13.90922121356897">jade.Window</node>
-    <node x="44.0" y="600.8516483516484">components.Spritesheet</node>
-    <node x="608.875" y="651.2864309603441">jade.LevelScene</node>
-    <node x="819.0" y="19.85164835164835">jade.Transform</node>
-    <node x="1235.336956521739" y="34.59077878643096">jade.Component</node>
-    <node x="301.75" y="600.8516483516484">jade.Camera</node>
+    <node x="24.0" y="283.62338748208316">components.Sprite</node>
+    <node x="1835.5842391304345" y="2.6048733874820087">jade.Window</node>
+    <node x="24.0" y="482.590778786431">components.Spritesheet</node>
+    <node x="728.0054347826089" y="284.7032967032967">jade.LevelScene</node>
+    <node x="454.52173913043475" y="7.35164835164835">jade.Transform</node>
+    <node x="1498.815217391304" y="7.35164835164835">jade.Component</node>
+    <node x="419.1413043478261" y="283.62338748208316">jade.Camera</node>
     <node x="-571.0" y="587.0">jade.KeyListener</node>
-    <node x="301.75" y="807.8081700907787">renderer.Renderer</node>
-    <node x="1367.608695652174" y="181.2032967032967">components.SpriteRenderer</node>
+    <node x="1184.1793478260875" y="813.0255613951267">renderer.Renderer</node>
+    <node x="1601.521739130435" y="141.20329670329667">components.SpriteRenderer</node>
     <node x="-236.0" y="7.35164835164835">renderer.Shader</node>
     <node x="-589.2608695652175" y="1248.9565217391303">build</node>
-    <node x="1150.4130434782614" y="193.37720974677495">components.FontRenderer</node>
-    <node x="631.7391304347826" y="356.75382226469185">jade.Scene</node>
+    <node x="1440.894021739131" y="141.20329670329667">components.FontRenderer</node>
+    <node x="749.7771739130436" y="7.35164835164835">jade.Scene</node>
     <node x="-571.0" y="7.35164835164835">jade.MouseListener</node>
-    <node x="44.0" y="807.8081700907787">renderer.RenderBatch</node>
+    <node x="1159.5271739130435" y="7.35164835164835">renderer.RenderBatch</node>
     <node x="179.0" y="7.35164835164835">util.AssetPool</node>
     <node x="-571.0" y="931.5652173913043">Main</node>
     <node x="24.0" y="7.35164835164835">renderer.Texture</node>
   </nodes>
   <notes />
   <edges />
-  <settings layout="계층" zoom="1.15" showDependencies="true" x="1017.0" y="776.0" />
+  <settings layout="계층" zoom="1.15" showDependencies="true" x="1017.0" y="552.0" />
   <SelectedNodes>
-    <node>jade.LevelEditorScene</node>
+    <node>renderer.Renderer</node>
   </SelectedNodes>
   <Categories>
     <Category>메서드</Category>
