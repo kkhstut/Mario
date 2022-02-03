@@ -14,7 +14,7 @@ public class Window {
     private int width, height;
     private String title;
     private long glfwWindow;
-    private ImGuiLayer guiLayer;
+    private ImGuiLayer imguiLayer;
 
     public float r, g, b, a;
     private boolean fadeToBlack = false;
@@ -124,8 +124,8 @@ public class Window {
 
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
-        this.guiLayer = new ImGuiLayer(glfwWindow);
-        this.guiLayer.initImGui();
+        this.imguiLayer = new ImGuiLayer(glfwWindow);
+        this.imguiLayer.initImGui();
 
         Window.changeScene(0);
     }
@@ -150,7 +150,7 @@ public class Window {
                 currentScene.update(dt);
             }
 
-            this.guiLayer.update(dt);
+            this.imguiLayer.update(dt, currentScene);
 
             glfwSwapBuffers(glfwWindow); // swap the color buffers
 
