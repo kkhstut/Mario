@@ -135,6 +135,7 @@ public class Window {
         float endTime;
         float dt = -1.0f;
 
+        currentScene.load();
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
         while ( !glfwWindowShouldClose(glfwWindow) ) {
@@ -158,6 +159,8 @@ public class Window {
             dt = endTime - beginTime;
             beginTime = endTime;
         }
+
+        currentScene.saveExit();
     }
 
     public static float getWidth() {
